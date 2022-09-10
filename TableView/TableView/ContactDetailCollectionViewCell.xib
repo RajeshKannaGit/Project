@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ContactDetailCollectionViewCell" customModule="TableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nna-nX-NHX">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball" translatesAutoresizingMaskIntoConstraints="NO" id="eHS-ap-lHk">
+                                <rect key="frame" x="5" y="6" width="140" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="P2d-Z4-5X2"/>
+                                    <constraint firstAttribute="height" constant="150" id="WJ6-lC-BFo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ContactName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueU-Mo-BcD">
+                                <rect key="frame" x="5" y="161" width="140" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="78N-Ey-YAB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ContactNumber" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UnP-rR-Liv">
+                                <rect key="frame" x="5" y="186" width="140" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="S2m-58-pzM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YYr-fL-egI">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="button:" destination="gTV-IL-0wX" eventType="touchUpInside" id="y1l-sg-ObP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YYr-fL-egI" secondAttribute="bottom" id="40j-8A-4gE"/>
+                            <constraint firstItem="eHS-ap-lHk" firstAttribute="centerX" secondItem="Nna-nX-NHX" secondAttribute="centerX" id="B4j-og-geu"/>
+                            <constraint firstItem="UnP-rR-Liv" firstAttribute="top" secondItem="ueU-Mo-BcD" secondAttribute="bottom" constant="5" id="IKT-Bz-7lJ"/>
+                            <constraint firstItem="eHS-ap-lHk" firstAttribute="centerX" secondItem="Nna-nX-NHX" secondAttribute="centerX" id="MKy-ao-TY9"/>
+                            <constraint firstItem="UnP-rR-Liv" firstAttribute="leading" secondItem="Nna-nX-NHX" secondAttribute="leading" constant="5" id="P8B-hS-zoJ"/>
+                            <constraint firstAttribute="trailing" secondItem="ueU-Mo-BcD" secondAttribute="trailing" constant="5" id="PCs-Dg-MYz"/>
+                            <constraint firstItem="ueU-Mo-BcD" firstAttribute="leading" secondItem="Nna-nX-NHX" secondAttribute="leading" constant="5" id="WIp-8c-aFq"/>
+                            <constraint firstItem="YYr-fL-egI" firstAttribute="top" secondItem="Nna-nX-NHX" secondAttribute="top" id="dRp-22-Qai"/>
+                            <constraint firstAttribute="trailing" secondItem="YYr-fL-egI" secondAttribute="trailing" id="evq-mS-m8e"/>
+                            <constraint firstAttribute="trailing" secondItem="UnP-rR-Liv" secondAttribute="trailing" constant="5" id="icS-WP-wTN"/>
+                            <constraint firstAttribute="bottom" secondItem="UnP-rR-Liv" secondAttribute="bottom" constant="9" id="jjx-HC-Jua"/>
+                            <constraint firstItem="eHS-ap-lHk" firstAttribute="top" secondItem="Nna-nX-NHX" secondAttribute="top" constant="6" id="kBq-YW-R3t"/>
+                            <constraint firstItem="YYr-fL-egI" firstAttribute="leading" secondItem="Nna-nX-NHX" secondAttribute="leading" id="kWL-mo-cly"/>
+                            <constraint firstItem="ueU-Mo-BcD" firstAttribute="top" secondItem="eHS-ap-lHk" secondAttribute="bottom" constant="5" id="sFX-7J-FIn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="Nna-nX-NHX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="0cK-P2-whe"/>
+                <constraint firstItem="Nna-nX-NHX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GvR-Xb-Ize"/>
+                <constraint firstAttribute="bottom" secondItem="Nna-nX-NHX" secondAttribute="bottom" id="NHr-ec-AiK"/>
+                <constraint firstAttribute="trailing" secondItem="Nna-nX-NHX" secondAttribute="trailing" id="dSO-kj-4LT"/>
+            </constraints>
+            <size key="customSize" width="178" height="138"/>
+            <connections>
+                <outlet property="ContactName" destination="ueU-Mo-BcD" id="oBT-dQ-iMy"/>
+                <outlet property="Number" destination="UnP-rR-Liv" id="DzO-Uk-Egb"/>
+                <outlet property="profileImageView" destination="eHS-ap-lHk" id="AHh-Zc-kVT"/>
+            </connections>
+            <point key="canvasLocation" x="224.63768115942031" y="160.04464285714286"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ball" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
